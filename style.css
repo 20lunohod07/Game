@@ -1,0 +1,61 @@
+.game {
+    width: 500px;
+    height: 300px;
+    border-bottom: 3px solid rgb(213, 3, 3);
+    margin-top: 100px;
+    margin-left: 450px;
+    
+}
+
+#monkey {
+    width: 50px;
+    height: 50px;
+    background-image: url(img/pngimg.com\ -\ monkey_PNG18735.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 250px;
+}
+
+#cactus {
+    width: 20px;
+    height: 40px;
+    background-image: url(img/cactus_PNG23616.png);
+    background-size: 20px 40px;
+    position: relative;
+    top: 210px;
+    left: 480px;
+    animation: cactusMov 1.5s infinite linear;
+}
+
+@keyframes cactusMov {
+    0% {
+        left: 480px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+.jump {
+    animation: jamp 0.3s linear;
+}
+
+@keyframes jamp {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 130px;
+    }
+    50% {
+        top: 80px;
+    }
+    80% {
+        top: 130px;
+    }
+    100% {
+        top: 150px;
+    }
+}
+
+
